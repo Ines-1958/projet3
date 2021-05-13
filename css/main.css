@@ -28,6 +28,7 @@ body h2, h3 {
 .heading__logo {
   background-color: blue;
   box-shadow: 2px 0px 2px 1px silver;
+  line-height: 250px;
 }
 
 .heading__logo--img {

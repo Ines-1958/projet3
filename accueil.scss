@@ -1,0 +1,17 @@
+.footer {
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__titre {
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+}
+.footer a {
+    color: white;
+    font-weight:bold;
+}
