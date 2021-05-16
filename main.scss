@@ -28,11 +28,13 @@ $couleur-tertiaire: #99E2D0;
     &__logo{
         background-color: blue;
         box-shadow: 2px 0px 2px 1px silver;
-        line-height: 250px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         &--img {
             width: 200px;
             display: block;
             margin: auto;
+
         }
         
     }
@@ -46,3 +48,4 @@ $couleur-tertiaire: #99E2D0;
         align-items: center;
     }
 }
+
