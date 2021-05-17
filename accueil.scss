@@ -15,12 +15,31 @@
     color: white;
     
 }
+.restaurants {
+    padding: 0 10px;
+    background-color: #F2F2F2;
+}
 .restaurant {
-    
+    border-radius: 10px;
+    padding: 10px;
     &__image {
         width: 100%;
         &--img {
             width: 100%;
+            object-fit: cover;
         }
+    }
+    &__infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: white;
+    }
+}
+.fonctionnement-heading {
+    &__step {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
     }
 }

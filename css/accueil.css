@@ -17,10 +17,34 @@
   color: white;
 }
 
+.restaurants {
+  padding: 0 10px;
+  background-color: #F2F2F2;
+}
+
 .restaurant {
-  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .restaurant__image {
   width: 100%;
+}
+
+.restaurant__image--img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant__infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: white;
+}
+
+.fonctionnement-heading__step {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
