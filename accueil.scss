@@ -1,19 +1,20 @@
-.footer {
-    background-color: #353535;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    &__titre {
-        font-family: 'Shrikhand', cursive;
-        margin: 0;
-        padding-left: 40px;
-        padding-top: 20px;
+
+
+.fonctionnement-heading {
+    &__step {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        &--bulle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $couleur-primaire;
+        }
+        &--p {
+            padding: 20px;
+        }
     }
-}
-.footer a {
-    color: white;
-    
 }
 .restaurants {
     padding: 0 10px;
@@ -36,10 +37,20 @@
         background-color: white;
     }
 }
-.fonctionnement-heading {
-    &__step {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
+.footer {
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__titre {
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+        padding-left: 40px;
+        padding-top: 20px;
     }
+}
+.footer a {
+    color: white;
+    
 }
