@@ -1,12 +1,12 @@
 .fonctionnement {
   padding: 0 10px;
-  background-color: aqua;
 }
 
 .fonctionnement-heading__step {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  position: relative;
   margin-left: 10px;
 }
 
@@ -14,17 +14,25 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  line-height: 30px;
-  margin-left: 20px;
+  line-height: 20px;
   padding-left: 5px;
-  background-color: green;
+  color: white;
+  background-color: #9356DC;
+  position: absolute;
+  top: 35px;
+  left: -10px;
 }
 
 .fonctionnement-heading__step--p {
   padding: 20px;
   background-color: #F2F2F2;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 2px 2px 6px 4px silver;
+  width: 100%;
+}
+
+.fonctionnement-heading__step--p--i {
+  margin-right: 20px;
 }
 
 .restaurants {
@@ -66,6 +74,18 @@
   margin: 0;
   padding-left: 40px;
   padding-top: 20px;
+}
+
+.footer__liste {
+  font-size: 13px;
+}
+
+.footer__liste--li {
+  padding-bottom: 10px;
+}
+
+.footer__liste--li--i {
+  padding-right: 10px;
 }
 
 .footer a {
