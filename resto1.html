@@ -3,18 +3,94 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/restos.css">
+        <script src="https://kit.fontawesome.com/a6f9fb69fc.js" crossorigin="anonymous"></script><!--insertion icônes fontawesome-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@400&display=swap=Roboto:wght@700&display=swap" rel="stylesheet"> <!--insertion police shrikhand et Roboto-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no" />
         <title>À la française</title>
     </head>
     <body>
-        <header>
-            <div>
-                <a href="index.html"></a>
-                <img src="images_ohmyfood/logo/ohmyfood.png" />
+        <header class="heading">
+            <div class="heading__logo">
+                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                <img src="images_ohmyfood/logo/ohmyfood.png" class="heading__logo--img"/>
             </div>
-            <div>
-                <img src="images_ohmyfood/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+            <div class="heading__photo-resto">
+                <img src="images_ohmyfood/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="heading__photo-resto--img
+                "/>
             </div>
         </header>
-        <section></section>
+        <section class="resto-la-francaise">
+            <h1>À la française</h1><!--<span><i class="far fa-heart"></i></span>-->
+            <setion class="entrees">
+                <h3>ENTREES</h3>
+                <div class="entrees__carte">
+                    <p>Tartare à la poulpe acidulé</p>
+                    <p>aux zestes d'orange</p>
+                    <p>25<i class="fas fa-euro-sign"></i></p>
+                </div>
+                <div class="entrees__carte"> 
+                    <p>Velouté de légumes d'antan</p>
+                    <p>Carotte, panais, topinambour</p>
+                    <p>35<i class="fas fa-euro-sign"></i></p>
+                </div>
+                <div class="entrees__carte">
+                    <p>Soupe à l'oignon</p>
+                    <p>Revisitée</p>
+                    <p>20<i class="fas fa-euro-sign"></i></p>
+                </div>
+            </setion>
+            <section>
+                <h3>PLATS</h3>
+                <div>
+                    <p>Coquilles Saint-Jacques</p>
+                    <p>Accompagnées d'une purée de panais</p>
+                    <p>40<i class="fas fa-euro-sign"></i></p>
+                </div>
+                <div>
+                    <p>Magret de canard</p>
+                    <p>Et parmentier de pommes de terre</p>
+                    <p>35<i class="fas fa-euro-sign"></i></p>
+                </div>
+                <div>
+                    <p>Pigeonneau d'Ille-et-Vilaine</p>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                    <p>44<i class="fas fa-euro-sign"></i></p>
+                </div>
+            </section>
+            <section>
+                <h1>DESSERTS</h1>
+                <div>
+                    <p>Pétales de violettes glacés</p>
+                    <p>Et purée de noisettes</p>
+                    <p>18<i class="fas fa-euro-sign"></i></p>
+                </div>
+                <div>
+                    <p>Fondant au chocolat</p>
+                    <p>Revisité</p>
+                    <p>22<i class="fas fa-euro-sign"></i></p>
+                </div>
+                <div>
+                    <p>Millefeuille croustillant</p>
+                    <p>Myrtilles et pâte d'amande</p>
+                    <p>23<i class="fas fa-euro-sign"></i></p>
+                </div>
+            </section>
+            <aside>
+                <div>
+                    <a href="#">Commander</a>
+                </div>
+            </aside>
+        </section>
+        <footer class="footer">
+            <p class="footer__titre">ohmyfood</p>
+            <ul class="footer__liste">
+                <li class="footer__liste--li"><a href="#"><i class="fas fa-utensils footer__liste--li--i"></i>Proposer un restaurant</a></li>
+                <li class="footer__liste--li"><a href="#"><i class="fas fa-hands-helping footer__liste--li--i"></i>Devenir partenaire</a> </li>
+                <li class="footer__liste--li"><a href="#">Mentions légales</a> </li>
+                <li class="footer__liste--li"><a href="mailto:contact@ohmyfood.com">Contact</a> </li>
+            </ul>
+        </footer>
     </body>
 </html>
