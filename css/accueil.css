@@ -1,5 +1,7 @@
 .fonctionnement {
-  padding: 0 10px;
+  padding: 0 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .fonctionnement-heading__step {
@@ -33,10 +35,11 @@
 
 .fonctionnement-heading__step--p--i {
   margin-right: 20px;
+  color: #7e7e7e;
 }
 
 .restaurants {
-  padding: 0 10px;
+  padding: 40px 10px;
   background-color: #F2F2F2;
 }
 
@@ -68,10 +71,7 @@
   justify-content: space-between;
   align-items: baseline;
   background-color: white;
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 10px;
   box-shadow: 2px 2px 5px 3px silver;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
