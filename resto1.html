@@ -12,8 +12,8 @@
     </head>
     <body>
         <header class="heading">
+            <a class="lien_retour" href="index.html"><i class="fas fa-arrow-left"></i></a>
             <div class="heading__logo">
-                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
                 <img src="images_ohmyfood/logo/ohmyfood.png" class="heading__logo--img"/>
             </div>
             <div class="heading__photo-resto">
@@ -21,65 +21,104 @@
                 "/>
             </div>
         </header>
-        <section class="resto-la-francaise">
-            <h1>À la française</h1><!--<span><i class="far fa-heart"></i></span>-->
-            <setion class="entrees">
+        <section class="restos">
+            <div class="restos__heading">
+                <h1>À la française</h1>
+                <span><i class="far fa-heart"></i></span>
+            </div>
+            <setion class="resto">
                 <h3>ENTREES</h3>
-                <div class="entrees__carte">
-                    <p>Tartare à la poulpe acidulé</p>
-                    <p>aux zestes d'orange</p>
-                    <p>25<i class="fas fa-euro-sign"></i></p>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Tartare à la poulpe acidulé</p>
+                        <p>aux zestes d'orange</p>
+                    </div> 
+                    <div class="resto__carte--prix">
+                        <p>25€</p>
+                    </div>      
                 </div>
-                <div class="entrees__carte"> 
-                    <p>Velouté de légumes d'antan</p>
-                    <p>Carotte, panais, topinambour</p>
-                    <p>35<i class="fas fa-euro-sign"></i></p>
+                <div class="resto__carte"> 
+                    <div class="resto__carte--plat">
+                        <p>Velouté de légumes d'antan</p>
+                        <p>Carotte, panais, topinambour</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>35€</p>
+                    </div>
                 </div>
-                <div class="entrees__carte">
-                    <p>Soupe à l'oignon</p>
-                    <p>Revisitée</p>
-                    <p>20<i class="fas fa-euro-sign"></i></p>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Soupe à l'oignon</p>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>20€</p>
+                    </div>
                 </div>
             </setion>
-            <section>
+            <section class="resto">
                 <h3>PLATS</h3>
-                <div>
-                    <p>Coquilles Saint-Jacques</p>
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40<i class="fas fa-euro-sign"></i></p>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Coquilles Saint-Jacques</p>
+                        <p>Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>40€</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Magret de canard</p>
-                    <p>Et parmentier de pommes de terre</p>
-                    <p>35<i class="fas fa-euro-sign"></i></p>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Magret de canard</p>
+                        <p>Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>35€</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Pigeonneau d'Ille-et-Vilaine</p>
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44<i class="fas fa-euro-sign"></i></p>
-                </div>
-            </section>
-            <section>
-                <h1>DESSERTS</h1>
-                <div>
-                    <p>Pétales de violettes glacés</p>
-                    <p>Et purée de noisettes</p>
-                    <p>18<i class="fas fa-euro-sign"></i></p>
-                </div>
-                <div>
-                    <p>Fondant au chocolat</p>
-                    <p>Revisité</p>
-                    <p>22<i class="fas fa-euro-sign"></i></p>
-                </div>
-                <div>
-                    <p>Millefeuille croustillant</p>
-                    <p>Myrtilles et pâte d'amande</p>
-                    <p>23<i class="fas fa-euro-sign"></i></p>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Pigeonneau d'Ille-et-Vilaine</p>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>44€</p>
+                    </div>
                 </div>
             </section>
-            <aside>
+            <section class="resto">
+                <h3>DESSERTS</h3>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Pétales de violettes glacés</p>
+                        <p>Et purée de noisettes</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>18€</p>
+                    </div>
+                </div>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Fondant au chocolat</p>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>22€</p>
+                    </div>
+                </div>
+                <div class="resto__carte">
+                    <div class="resto__carte--plat">
+                        <p>Millefeuille croustillant</p>
+                        <p>Myrtilles et pâte d'amande</p>
+                    </div>
+                    <div class="resto__carte--prix">
+                        <p>23€</p>
+                    </div>
+                </div>
+            </section>
+            <aside class="bouton-commande">
                 <div>
-                    <a href="#">Commander</a>
+                    <a class="bouton" href="#">Commander</a>
                 </div>
             </aside>
         </section>

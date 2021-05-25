@@ -18,6 +18,14 @@ body ul {
 
 body h2, h3 {
   font-weight: bold;
+  margin: 0;
+}
+
+.bouton {
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .heading {
@@ -26,7 +34,8 @@ body h2, h3 {
 }
 
 .heading__logo {
-  box-shadow: 2px 0px 2px 1px silver;
+  z-index: 2;
+  box-shadow: 5px 0px 5px 3px #cecece;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -39,7 +48,7 @@ body h2, h3 {
 
 .heading__localisation {
   text-align: center;
-  background-color: silver;
+  background-color: #eaeaea;
 }
 
 .heading__titre {
@@ -47,16 +56,9 @@ body h2, h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   padding: 0 10px;
   padding-bottom: 40px;
-}
-
-.heading__titre--a {
-  padding: 15px;
-  border-radius: 30px;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .footer {
@@ -70,16 +72,17 @@ body h2, h3 {
 .footer__titre {
   font-family: 'Shrikhand', cursive;
   margin: 0;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-top: 20px;
 }
 
 .footer__liste {
   font-size: 13px;
+  padding-left: 20px;
 }
 
 .footer__liste--li {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer__liste--li--i {
