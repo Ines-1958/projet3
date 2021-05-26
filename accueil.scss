@@ -6,6 +6,9 @@ $couleur-tertiaire: #99E2D0;
     padding: 0 20px;
     margin-top: 40px;
     margin-bottom: 40px;
+    @media (min-width: 1024px) {
+        text-align: center;
+    }
 }
 .fonctionnement-heading {
     &__step {
@@ -42,13 +45,35 @@ $couleur-tertiaire: #99E2D0;
 .restaurants {
     padding: 40px 10px;
     background-color: #F2F2F2;
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            text-align: center;
+        }
+    }
     &__titre {
         margin: 10px;
+    }
+    &__bloc {
+        @media (min-width: 1024px) {
+            display:flex;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            display: flex;
+            flex-wrap: wrap; /*chaque restaurant occupe 50% de largeur et tout ce qui depasse va à la ligne; d'où la flex-wrap*/
+        }
     }
 }
 .restaurant {
     border-radius: 10px;
     padding: 10px;
+    @media (min-width: 1024px) {
+        width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 50%;/*chaque restaurant occupe une largeur de 50% entre 768px et 1023px */
+    }
     &__image {
         width: 100%;
         height: 180px;

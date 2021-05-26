@@ -1,7 +1,14 @@
+@charset "UTF-8";
 .fonctionnement {
   padding: 0 20px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement {
+    text-align: center;
+  }
 }
 
 .fonctionnement-heading__step {
@@ -43,13 +50,50 @@
   background-color: #F2F2F2;
 }
 
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants h2 {
+    text-align: center;
+  }
+}
+
 .restaurants__titre {
   margin: 10px;
+}
+
+@media (min-width: 1024px) {
+  .restaurants__bloc {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .restaurants__bloc {
+    display: flex;
+    flex-wrap: wrap;
+    /*chaque restaurant occupe 50% de largeur et tout ce qui depasse va à la ligne; d'où la flex-wrap*/
+  }
 }
 
 .restaurant {
   border-radius: 10px;
   padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .restaurant {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .restaurant {
+    width: 50%;
+    /*chaque restaurant occupe une largeur de 50% entre 768px et 1023px */
+  }
 }
 
 .restaurant__image {
