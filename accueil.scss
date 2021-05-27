@@ -11,12 +11,19 @@ $couleur-tertiaire: #99E2D0;
     }
 }
 .fonctionnement-heading {
+    @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+    }
     &__step {
         display: flex;
         flex-direction: row;
         align-items: baseline;
         position: relative;
         margin-left: 10px;
+        @media (min-width: 1024px) {
+            width: 31%;
+        }
         &--bulle {
             width: 20px;
             height: 20px;
@@ -28,6 +35,14 @@ $couleur-tertiaire: #99E2D0;
             position: absolute;
             top: 35px;
             left: -10px;
+            @media (min-width: 1024px) {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 0px;
+                top: 29px;
+                left: -17px;
+            }
         }
         &--p {
             padding: 20px;

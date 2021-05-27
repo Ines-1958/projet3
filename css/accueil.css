@@ -11,12 +11,25 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .fonctionnement-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .fonctionnement-heading__step {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   position: relative;
   margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement-heading__step {
+    width: 31%;
+  }
 }
 
 .fonctionnement-heading__step--bulle {
@@ -30,6 +43,17 @@
   position: absolute;
   top: 35px;
   left: -10px;
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement-heading__step--bulle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+    top: 29px;
+    left: -17px;
+  }
 }
 
 .fonctionnement-heading__step--p {
