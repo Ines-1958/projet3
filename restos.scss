@@ -58,14 +58,27 @@ body h1 {
         margin: 10px;
         border-radius: 20px;
         cursor: pointer;
+        &:hover .resto__carte--checked{
+            color: red; /* à enlever */
+            display: block;
+            width: 10%;
+            height: 86px;
+            line-height: 86px;
+            background-color: green;/*à modifier*/
+            text-align: center;
+            margin-left: 10px;
+            margin-right: -9px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
         &--plat {
             text-overflow: ellipsis;/*remplacement du texte pardes pointillés, quand il y a beaucoup de texte*/
             white-space: nowrap;
             overflow: hidden;
             >p {
-               text-overflow: ellipsis; 
-               white-space: nowrap;
-               overflow: hidden;
+                text-overflow: ellipsis; 
+                white-space: nowrap;
+                overflow: hidden;
             }
             >:nth-of-type(1){
                 font-weight: bold;
