@@ -57,6 +57,14 @@ body h1 {
   font-size: 15px;
 }
 
+.resto h3::after {
+  content: "";
+  width: 20px;
+  height: 50px;
+  color: #99E2D0;
+  position: relative;
+}
+
 .resto__carte {
   display: flex;
   justify-content: space-between;
@@ -70,17 +78,16 @@ body h1 {
 }
 
 .resto__carte:hover .resto__carte--checked {
-  color: red;
-  /* à enlever */
   display: block;
   width: 10%;
   height: 86px;
   line-height: 86px;
-  background-color: green;
+  color: white;
+  background-color: #99E2D0;
   /*à modifier*/
   text-align: center;
   margin-left: 10px;
-  margin-right: -9px;
+  margin-right: -10px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
