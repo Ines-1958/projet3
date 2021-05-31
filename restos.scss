@@ -1,6 +1,12 @@
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
 body h1 {
     font-family: 'Shrikhand', cursive;
 }
@@ -9,10 +15,17 @@ body h1 {
         width: 100%;
         height: 250px;
         object-fit: cover;
+        @media (min-width: 1024px) {
+            height: 514px;
+        }
         &--img {
             width: 100%;
             height: 100%; /*height: 250px*/
             object-fit: cover;
+            @media (min-width: 1024px) {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
         }
     }
     &__resto {
@@ -35,6 +48,10 @@ body h1 {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     z-index: 2;
+    @media (min-width: 1024px) {
+        width: 80%;
+        margin: -55px auto 0px;
+    }
     &__heading {
         display: flex;
         align-items: baseline;
@@ -49,14 +66,17 @@ body h1 {
         padding: 10px;
         font-weight: normal;
         font-size: 15px;
+        position: relative;
         &::after {
             content: "";
-            width: 6px;
-            height: 5px;
-            color: $couleur-tertiaire;
-            position: relative;
+            width: 38px;
+            height: 3px;
+            background-color: $couleur-tertiaire;
+            position: absolute;
             z-index: 2;
             display: block;
+            left: 10px;
+            bottom: 0;
             }    
         
     }
@@ -71,6 +91,7 @@ body h1 {
         margin: 10px;
         border-radius: 20px;
         cursor: pointer;
+        transition: all 0.5s linear 0s;
         &:hover .resto__carte--checked{
             display: block;
             width: 10%;
@@ -83,11 +104,13 @@ body h1 {
             margin-right: -10px;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
+            transition: all 0.5s linear 0s;
         }
         &--plat {
             text-overflow: ellipsis;/*remplacement du texte pardes pointillés, quand il y a beaucoup de texte*/
             white-space: nowrap;
             overflow: hidden;
+            width: 85%;
             >p {
                 text-overflow: ellipsis; 
                 white-space: nowrap;
@@ -98,7 +121,7 @@ body h1 {
             }
         }
         &--prix {
-            width: 10%;/*le cadrant du prix prend 20% du cadre parent pour laisser place à la div checked d'apparaître au hover*/
+            width: 5%;/*le cadrant du prix prend 20% du cadre parent pour laisser place à la div checked d'apparaître au hover*/
             p {
                 font-weight: bold;
             }
@@ -106,6 +129,12 @@ body h1 {
         &--checked {
             width: 0%;
             display: none;
+            transition: 0.5s linear 0s;
+            & i {
+                -webkit-animation:spin 0.3s linear ;/*rotation de l'icône à 360deg pendant 0.3secondes*/
+                -moz-animation:spin 0.3s linear ;
+                animation:spin 0.3s linear ;
+            }
         }
     }
 }

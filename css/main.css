@@ -63,6 +63,12 @@ body h2, h3 {
   margin: auto;
 }
 
+@media (min-width: 1024px) {
+  .heading__logo--img {
+    width: 220px;
+  }
+}
+
 .heading__localisation {
   text-align: center;
   background-color: #eaeaea;
