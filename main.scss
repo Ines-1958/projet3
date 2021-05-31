@@ -31,6 +31,23 @@ $couleur-tertiaire: #99E2D0;
     background: linear-gradient($couleur-secondaire, $couleur-primaire );
 }
 
+.like {
+    transform: scale(1);
+    transition: transform 0.2s;
+    &:hover {
+        cursor: pointer;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        background-image:linear-gradient($couleur-primaire,$couleur-secondaire);
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        transform: scale(1.5);
+    }
+}
+
+
 .heading {
     display: flex;
     flex-direction: column;

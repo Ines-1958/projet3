@@ -34,6 +34,7 @@ body h1 {
   padding: 0 10px;
   position: relative;
   margin-top: -55px;
+  /**marge négative pour supperposer la section resto par rapport au header*/
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   z-index: 2;
@@ -59,10 +60,12 @@ body h1 {
 
 .resto h3::after {
   content: "";
-  width: 20px;
-  height: 50px;
+  width: 6px;
+  height: 5px;
   color: #99E2D0;
   position: relative;
+  z-index: 2;
+  display: block;
 }
 
 .resto__carte {
