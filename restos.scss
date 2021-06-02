@@ -87,14 +87,17 @@ body h1 {
         align-items: flex-end;
         background-color: white;
         padding-left: 10px;
-        /*padding-right: 10px;*/
+        padding-right: 10px;
         margin: 10px;
         border-radius: 20px;
         cursor: pointer;
         transition: all 0.5s;
+        @media (min-width: 1024px) {
+            padding-right: 0px;
+        }
         &:hover .resto__carte--checked{
             display: initial;
-            width: 10%;
+            width: 90px;
             height: 86px;
             line-height: 86px;
             background-color: $couleur-tertiaire;/*à modifier*/
@@ -135,7 +138,7 @@ body h1 {
             }
         }
         &--checked {
-            width: 0%;
+            width: 0px;
             transition: 0.5s;
             & span { 
                 display: none;

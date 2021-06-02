@@ -80,6 +80,17 @@ $couleur-tertiaire: #99E2D0;
         }
     }
 }
+
+.new::before { /*ajout de la partie "Nouveau"*/
+    content: "Nouveau";
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    background-color: $couleur-tertiaire;
+    color: #008766;
+    padding: 5px 10px;
+    font-size: 14px;
+}
 .restaurant {
     border-radius: 10px;
     padding: 10px;
@@ -95,6 +106,7 @@ $couleur-tertiaire: #99E2D0;
         overflow: hidden;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        position: relative;
         &--img {
             width: 100%;
             height: 180px;
