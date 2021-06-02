@@ -87,24 +87,32 @@ body h1 {
         align-items: flex-end;
         background-color: white;
         padding-left: 10px;
-        padding-right: 10px;
+        /*padding-right: 10px;*/
         margin: 10px;
         border-radius: 20px;
         cursor: pointer;
-        transition: all 0.5s linear 0s;
+        transition: all 0.5s;
         &:hover .resto__carte--checked{
-            display: block;
+            display: initial;
             width: 10%;
             height: 86px;
             line-height: 86px;
-            color: white;
             background-color: $couleur-tertiaire;/*à modifier*/
+            color: white;
             text-align: center;
             margin-left: 10px;
-            margin-right: -10px;
+            /*margin-right: -10px;*/
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            transition: all 0.5s linear 0s;
+            transition: 0.5s;
+            & span { 
+                
+                display: block;
+                -webkit-animation:spin 0.3s linear ;/*rotation de l'icône à 360deg pendant 0.3secondes*/
+                -moz-animation:spin 0.3s linear ;
+                animation:spin 0.3s linear; 
+               
+            }
         }
         &--plat {
             text-overflow: ellipsis;/*remplacement du texte pardes pointillés, quand il y a beaucoup de texte*/
@@ -128,12 +136,10 @@ body h1 {
         }
         &--checked {
             width: 0%;
-            display: none;
-            transition: 0.5s linear 0s;
-            & i {
-                -webkit-animation:spin 0.3s linear ;/*rotation de l'icône à 360deg pendant 0.3secondes*/
-                -moz-animation:spin 0.3s linear ;
-                animation:spin 0.3s linear ;
+            transition: 0.5s;
+            & span { 
+                display: none;
+                color: white;
             }
         }
     }

@@ -104,27 +104,33 @@ body h1 {
   align-items: flex-end;
   background-color: white;
   padding-left: 10px;
-  padding-right: 10px;
+  /*padding-right: 10px;*/
   margin: 10px;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.5s linear 0s;
+  transition: all 0.5s;
 }
 
 .resto__carte:hover .resto__carte--checked {
-  display: block;
+  display: initial;
   width: 10%;
   height: 86px;
   line-height: 86px;
-  color: white;
   background-color: #99E2D0;
   /*à modifier*/
+  color: white;
   text-align: center;
   margin-left: 10px;
-  margin-right: -10px;
+  /*margin-right: -10px;*/
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  transition: all 0.5s linear 0s;
+  transition: 0.5s;
+}
+
+.resto__carte:hover .resto__carte--checked span {
+  display: block;
+  /*rotation de l'icône à 360deg pendant 0.3secondes*/
+  animation: spin 0.3s linear;
 }
 
 .resto__carte--plat {
@@ -156,13 +162,12 @@ body h1 {
 
 .resto__carte--checked {
   width: 0%;
-  display: none;
-  transition: 0.5s linear 0s;
+  transition: 0.5s;
 }
 
-.resto__carte--checked i {
-  /*rotation de l'icône à 360deg pendant 0.3secondes*/
-  animation: spin 0.3s linear;
+.resto__carte--checked span {
+  display: none;
+  color: white;
 }
 
 .bouton-commande {
