@@ -1,4 +1,25 @@
 @charset "UTF-8";
+.loading {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  animation: 3s linear 3s loader;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -999;
+    display: none;
+  }
+}
+
 .fonctionnement {
   padding: 0 20px;
   margin-top: 40px;

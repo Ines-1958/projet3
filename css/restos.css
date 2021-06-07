@@ -195,77 +195,29 @@ body h1 {
     100% {
         animation: 1.5s infinite;
     }
+}*/
+.resto.entrees {
+  animation: 1s linear 0.2s apparition-progressive;
 }
-.resto {
-    &.entrees {
-        animation: entrees 1s;
-        -webkit-animation: entrees 1s;
-    }
-    &.plats {
-        animation: plats 2s;
-        -webkit-animation: plats 2s;
-    }
-    &.desserts {
-        animation: desserts 3s;
-        -webkit-animation: desserts 3s;
-    }
+
+.resto.plats {
+  animation: 1s linear 0.8s apparition-progressive;
 }
-@-webkit-keyframes entrees {
-    0% {
-        opacity: 0;
-        display: block;
-    }
-    100% {
-        opacity: 1;
-    }
+
+.resto.desserts {
+  animation: 1s linear 1s apparition-progressive;
 }
-@keyframes entrees {
-    0% {
-        opacity: 0;
-        display: block;
-    }
-    100% {
-        opacity: 1;
-    }
+
+@keyframes apparition-progressive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes plats {
-    50% {
-        opacity: 0; 
-        display: block;
-    }
-    100% {
-         opacity: 1;
-    }
-}
-@keyframes plats {
-    50% {
-        opacity: 0; 
-        display: block;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-webkit-keyframes desserts {
-    70% {
-        opacity: 0; 
-        display: block;
-    }
-    100% {
-         opacity: 1;
-    }
-}
-@keyframes desserts {
-    70% {
-        opacity: 0; 
-        display: block;
-    }
-    100% {
-         opacity: 1;
-    }
-}
-    
-fin keyframes*/
+
+/*fin keyframes*/
 .bouton-commande {
   text-align: center;
   padding: 50px;
