@@ -29,6 +29,11 @@ body h2, h3 {
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
+.bouton:hover {
+  background: linear-gradient(#e4d5f6, #FF79DA, 30%);
+  /*box-shadow: $dark-box-shadow;*/
+}
+
 .like {
   transform: scale(1);
   transition: transform 0.2s;
