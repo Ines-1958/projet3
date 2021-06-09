@@ -36,13 +36,19 @@ body {
   height: 100%;
   z-index: 999;
   position: absolute;
-  top: calc(50%-24px);
-  left: calc(50%-24px);
+  /*top: calc(50% - 24px);
+    left: calc(50% - 24px);*/
   /*overflow: hidden;*/
-  text-align: center;
+  /*text-align: center;*/
   animation: 3s linear 2s both loader;
   background-color: #fff;
   color: #530640;
+}
+
+.loading i {
+  top: 50%;
+  left: 50%;
+  position: absolute;
 }
 
 @keyframes loader {
