@@ -40,7 +40,7 @@ body {
   left: calc(50%-24px);
   /*overflow: hidden;*/
   text-align: center;
-  animation: 3s linear 3s both loader;
+  animation: 3s linear 2s both loader;
   background-color: #fff;
   color: #530640;
 }
@@ -48,6 +48,9 @@ body {
 @keyframes loader {
   0% {
     opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 0;

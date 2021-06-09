@@ -2,6 +2,23 @@ $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 
+@-moz-keyframes rotation { 
+    100% { 
+        -moz-transform: rotate(360deg);
+     } 
+    }
+@-webkit-keyframes rotation { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+    } 
+}
+@keyframes rotation { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg);
+    }
+}
+
 
 
 body h1 {
@@ -68,7 +85,7 @@ body h1 {
         font-size: 15px;
         position: relative;
         &::after {
-            content: "";
+            content: ""; /*ajout du soulignement sur les titres h3*/
             width: 38px;
             height: 3px;
             background-color: $couleur-tertiaire;
@@ -121,22 +138,7 @@ body h1 {
                 animation: rotation 0.3s linear; 
                
             }
-            @-moz-keyframes rotation { 
-                100% { 
-                    -moz-transform: rotate(360deg);
-                 } 
-                }
-            @-webkit-keyframes rotation { 
-                100% { 
-                    -webkit-transform: rotate(360deg); 
-                } 
-            }
-            @keyframes rotation { 
-                100% { 
-                    -webkit-transform: rotate(360deg); 
-                    transform:rotate(360deg);
-                }
-            }
+           
         }
         &--plat {
             text-overflow: ellipsis;/*remplacement du texte pardes pointillés, quand il y a beaucoup de texte*/

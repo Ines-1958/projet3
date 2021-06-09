@@ -22,10 +22,10 @@ body h2, h3 {
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
-$light-couleur-primaire: lighten (#9356DC, 50%);
+/*$light-couleur-primaire: lighten (#9356DC, 50%);
 $light-couleur-secondaire: lighten (#FF79DA, 25%);
 $dark-box-shadow: darken (0px 5px 5px 3px #c5c5c5, 10%);
-$light-color: lighten(#9356DC,30% ), (#FF79DA, 30%);
+$light-color: lighten(#9356DC,30% ), (#FF79DA, 30%);*/
 
 .bouton {
     padding: 15px;
@@ -33,9 +33,14 @@ $light-color: lighten(#9356DC,30% ), (#FF79DA, 30%);
     color: white;
     box-shadow: 0px 5px 5px 3px #c5c5c5;
     background: linear-gradient($couleur-secondaire, $couleur-primaire );
-    &:hover {
-        background: linear-gradient($light-color);
+    &:hover a {
+        background: linear-gradient ( lighten ($couleur-secondaire, 10%), darken ($couleur-primaire, 15%) );
+        opacity: 1;
+        z-index: -1;
+        transition: opacity 250ms;
+        /*background: linear-gradient($light-color);*/
         /*box-shadow: $dark-box-shadow;*/
+        
     }
 }
 
