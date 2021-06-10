@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -33,13 +34,11 @@ $light-color: lighten(#9356DC,30% ), (#FF79DA, 30%);*/
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-.bouton:hover a {
-  background: linear-gradient #fface8, #6c27be;
-  opacity: 1;
-  z-index: -1;
-  transition: opacity 250ms;
-  /*background: linear-gradient($light-color);*/
-  /*box-shadow: $dark-box-shadow;*/
+a:hover.bouton {
+  /*background: linear-gradient(lighten($couleur-secondaire, 10%), lighten($couleur-primaire, 15%) );/*éclaircissement couleur bouton au survol*/
+  box-shadow: 0px 5px 5px 3px grey;
+  /*changement couleur ombre pour être plus visible*/
+  background: linear-gradient(90deg, #fface8 0%, #ae80e5 100%);
 }
 
 .like {

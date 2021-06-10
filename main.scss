@@ -33,16 +33,14 @@ $light-color: lighten(#9356DC,30% ), (#FF79DA, 30%);*/
     color: white;
     box-shadow: 0px 5px 5px 3px #c5c5c5;
     background: linear-gradient($couleur-secondaire, $couleur-primaire );
-    &:hover a {
-        background: linear-gradient ( lighten($couleur-secondaire, 10%), darken($couleur-primaire, 15%) );
-        opacity: 1;
-        z-index: -1;
-        transition: opacity 250ms;
-        /*background: linear-gradient($light-color);*/
-        /*box-shadow: $dark-box-shadow;*/
-        
-    }
 }
+ a {
+ &:hover.bouton{
+        /*background: linear-gradient(lighten($couleur-secondaire, 10%), lighten($couleur-primaire, 15%) );/*éclaircissement couleur bouton au survol*/
+        box-shadow: 0px 5px 5px 3px grey;/*changement couleur ombre pour être plus visible*/
+        background: linear-gradient(90deg, lighten($couleur-secondaire, 10) 0%, lighten($couleur-primaire, 10) 100%);
+    }   
+}   
 
 .like {
     transform: scale(1);
