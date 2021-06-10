@@ -1,21 +1,30 @@
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
+$padding-principal: 0px 10px;
 
 @-moz-keyframes rotation { 
     100% { 
         -moz-transform: rotate(360deg);
      } 
-    }
+}
 @-webkit-keyframes rotation { 
     100% { 
         -webkit-transform: rotate(360deg); 
     } 
 }
 @keyframes rotation { 
-    100% { 
+   /* 0% { 
         -webkit-transform: rotate(360deg); 
         transform:rotate(360deg);
+        overflow: hidden;
+    }
+    25% {
+        transform: rotate(360deg);
+        overflow: visible;
+    }*/
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -45,7 +54,7 @@ body h1 {
     &__resto {
         display: flex;
         align-items: center;
-        padding: 0 10px;
+        padding: $padding-principal;
         &--logo {
             display: block;
             margin: auto;
@@ -56,7 +65,7 @@ body h1 {
 }
 .restos {
     background-color: #F6F6F6;
-    padding: 0 10px;
+    padding: $padding-principal;
     position: relative;
     margin-top: -55px;/**marge négative pour supperposer la section resto par rapport au header*/
     border-top-left-radius: 30px;
@@ -126,16 +135,19 @@ body h1 {
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             transition: 0.5s;
+            overflow: hidden;
+            animation: checked 0.5s 1s ease-in-out forwards;
             @media (min-width: 1024px) {
                 margin-right: 0px;
                 margin-left: 10px;
             }
+            
             & span { 
                 
                 display: block;
                 -webkit-animation: rotation 0.3s linear ;/*rotation de l'icône à 360deg pendant 0.3secondes*/
                 -moz-animation: rotation 0.3s linear ;
-                animation: rotation 0.3s linear; 
+                animation: rotation 0.3s 0.1s linear; 
                
             }
            
@@ -163,11 +175,25 @@ body h1 {
         &--checked {
             width: 0px;
             transition: 0.5s;
+            overflow: hidden;
+            transform: scaleX(1);
+            transform-origin: right;
             & span { 
                 display: none;
                 color: white;
             }
         }
+    }
+}
+
+@keyframes checked {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform-origin: right;
+        transform: scaleX(0);
+        
     }
 }
 

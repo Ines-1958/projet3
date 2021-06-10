@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 @keyframes rotation {
+  /* 0% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg);
+        overflow: hidden;
+    }
+    25% {
+        transform: rotate(360deg);
+        overflow: visible;
+    }*/
   100% {
     transform: rotate(360deg);
   }
@@ -39,7 +48,7 @@ body h1 {
 .heading__resto {
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0px 10px;
 }
 
 .heading__resto--logo {
@@ -51,7 +60,7 @@ body h1 {
 
 .restos {
   background-color: #F6F6F6;
-  padding: 0 10px;
+  padding: 0px 10px;
   position: relative;
   margin-top: -55px;
   /**marge négative pour supperposer la section resto par rapport au header*/
@@ -134,6 +143,8 @@ body h1 {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: 0.5s;
+  overflow: hidden;
+  animation: checked 0.5s 1s ease-in-out forwards;
 }
 
 @media (min-width: 1024px) {
@@ -146,7 +157,7 @@ body h1 {
 .resto__carte:hover .resto__carte--checked span {
   display: block;
   /*rotation de l'icône à 360deg pendant 0.3secondes*/
-  animation: rotation 0.3s linear;
+  animation: rotation 0.3s 0.1s linear;
 }
 
 .resto__carte--plat {
@@ -179,11 +190,24 @@ body h1 {
 .resto__carte--checked {
   width: 0px;
   transition: 0.5s;
+  overflow: hidden;
+  transform: scaleX(1);
+  transform-origin: right;
 }
 
 .resto__carte--checked span {
   display: none;
   color: white;
+}
+
+@keyframes checked {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
 }
 
 .resto, .entrees, .plats, .desserts {
