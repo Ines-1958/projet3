@@ -1,15 +1,6 @@
 @charset "UTF-8";
 
 @keyframes rotation {
-  /* 0% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg);
-        overflow: hidden;
-    }
-    25% {
-        transform: rotate(360deg);
-        overflow: visible;
-    }*/
   100% {
     transform: rotate(360deg);
   }
@@ -144,7 +135,8 @@ body h1 {
   border-bottom-right-radius: 20px;
   transition: 0.5s;
   overflow: hidden;
-  animation: checked 0.5s 1s ease-in-out forwards;
+  /*animation: checked 0.5s 1s backwards;
+            transform: scaleX(0);*/
 }
 
 @media (min-width: 1024px) {
@@ -200,16 +192,16 @@ body h1 {
   color: white;
 }
 
-@keyframes checked {
-  0% {
-    transform: scaleX(1);
-  }
-  100% {
-    transform-origin: right;
-    transform: scaleX(0);
-  }
-}
-
+/*@keyframes checked {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform-origin: right;
+        transform: scaleX(0);
+        
+    }
+}*/
 .resto, .entrees, .plats, .desserts {
   opacity: 0;
 }

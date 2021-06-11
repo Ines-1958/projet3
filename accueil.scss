@@ -1,35 +1,7 @@
-$couleur-primaire: #9356DC;
-$couleur-secondaire: #FF79DA;
-$couleur-tertiaire: #99E2D0;
+@import 'variables';
 
-/*body {
-    overflow: hidden;
-    animation: 3s ease-in-out 3s  after-loader;
-    position:relative;
-    
-}
-@keyframes after-loader {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        overflow: auto;    
-    }
-}*/
-/*body {
-    overflow: hidden;
-    animation: 3s ease-in-out 0s after-loader;
-}
-@keyframes after-loader {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        overflow: auto;    
-    }
-}*/
+
+
 body {
     position: relative;
 }
@@ -39,10 +11,6 @@ body {
     height: 100%;
     z-index: 999;
     position: absolute;
-    /*top: calc(50% - 24px);
-    left: calc(50% - 24px);*/
-    /*overflow: hidden;*/
-    /*text-align: center;*/
     animation:  3s linear 2s both loader;
     background-color: #fff;
     color: rgb(83, 6, 64);
@@ -113,7 +81,7 @@ body {
         }
         &--p {
             padding: 20px;
-            background-color: #F6F6F6;
+            background-color: $background-color-clair;
             border-radius: 15px;
             box-shadow: 2px 2px 6px 4px silver;
             width: 100%;
