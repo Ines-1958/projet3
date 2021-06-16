@@ -38,9 +38,24 @@ a:hover.bouton {
 }
 
 .like {
-  transform: scale(1);
-  background-image: none;
-  transition: transform 0.2s, background-image 1s;
+  /*transform: scale(1);
+    background-image: none; 
+    transition: transform 0.2s, background-image 1s;*/
+  transition: all 0.3s linear 0s;
+  /*&:hover {
+        background-image: linear-gradient($couleur-primaire,$couleur-secondaire);
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        transition: all 0.3s linear 0s;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        transform: scale(1.5);
+        background-clip: text;
+        font-weight: bold;
+
+
+    }*/
 }
 
 .like:hover {
@@ -50,7 +65,36 @@ a:hover.bouton {
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transform: scale(1.5);
+  /*transform: scale(1.5);
+        
+        /*transition: all 0.3s linear 0s;
+        opacity: 1;
+        background-image:linear-gradient($couleur-primaire,$couleur-secondaire);
+        background-clip: text;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
+  animation: bouton-like 1s 0.1s both ease-in-out;
+}
+
+@keyframes bouton-like {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .heading {
