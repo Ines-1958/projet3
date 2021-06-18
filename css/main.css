@@ -31,32 +31,13 @@ body h2, h3 {
 }
 
 a:hover.bouton {
-  /*background: linear-gradient(lighten($couleur-secondaire, 10%), lighten($couleur-primaire, 15%) );/*éclaircissement couleur bouton au survol*/
   box-shadow: 0px 5px 5px 3px grey;
   /*changement couleur ombre pour être plus visible*/
   background: linear-gradient(90deg, #fface8 0%, #ae80e5 100%);
 }
 
 .like {
-  /*transform: scale(1);
-    background-image: none; 
-    transition: transform 0.2s, background-image 1s;*/
   transition: all 0.3s linear 0s;
-  transform: scale(1);
-  /*&:hover {
-        background-image: linear-gradient($couleur-primaire,$couleur-secondaire);
-        top: 0;
-        z-index: 1;
-        height: 100%;
-        transition: all 0.3s linear 0s;
-        -moz-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-        transform: scale(1.5);
-        background-clip: text;
-        font-weight: bold;
-
-
-    }*/
 }
 
 .like:hover {
@@ -67,18 +48,11 @@ a:hover.bouton {
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  /*transform: scale(1.5);*/
-  /*transition: all 0.3s linear 0s;*/
-  /*opacity: 1;
-        background-image:linear-gradient($couleur-primaire,$couleur-secondaire);
-        background-clip: text;
-        -moz-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-        transition: all 0.3s linear 0s;*/
   animation: bouton-like 1s 0.1s backwards ease-in-out;
 }
 
 @keyframes bouton-like {
+  /*Keyframes pour faire apparaître la couleur progressivement au hover*/
   0% {
     opacity: 0;
   }
